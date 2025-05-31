@@ -1,0 +1,3 @@
+This is because the list of modified as the program, for e.g. if we are at index 2, but we delete index 2, the list will be compressed such that the element initially at index 3 will be shifted to index 2, yet len(inventory) is called at the start, which causes index to reach a number that will ever be more than what the list has
+
+Instead of removing books by the specified book, we can just create an answer list with books that are not by the author we don't want
