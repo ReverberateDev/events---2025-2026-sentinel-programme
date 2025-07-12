@@ -1,0 +1,5 @@
+Initially there were 41 packets, after filter, there are 4
+2 packets outgoing
+ip.src == [Your_IP] && http
+
+4 messages

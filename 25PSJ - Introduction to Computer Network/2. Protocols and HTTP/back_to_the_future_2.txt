@@ -1,0 +1,36 @@
+Part 1: Inspect HTTP Headers
+
+Request URL
+https://info.cern.ch/hypertext/WWW/TheProject.html
+Request Method
+GET
+Status Code
+304 Not Modified
+
+accept
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Purpose: Tells the server what file formats/MIME types the client (browser) can handle. The server uses this to send an appropriate response format (e.g., HTML, XML, or a fallback).
+
+Why Browsers Allow Easy Changes:
+
+Debugging/Development:
+
+Lets developers test edits live without altering the actual server files.
+
+Essential for prototyping or fixing layout issues.
+
+Educational Use:
+
+Users can learn HTML/CSS by experimenting visually.
+
+Temporary Customization:
+
+Users can modify pages for readability (e.g., increasing font size) or accessibility.
+
+Usefulness:
+
+Immediate visual feedback speeds up development.
+
+No server-side changes needed for testing.
+
+Helps understand how websites are structured.

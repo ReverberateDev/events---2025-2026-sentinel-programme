@@ -1,0 +1,8 @@
+Part 1: Status Line
+The HTTP protocol version being used (1.1 in this case)
+The request succeeded (200 is the success status code)
+
+Part 2: Headers
+Specifies the media type of the resource (e.g., text/html for HTML documents)
+Identifies the web server software handling the request (e.g., Apache/2.4.41)
+Indicates the size of the response body in bytes

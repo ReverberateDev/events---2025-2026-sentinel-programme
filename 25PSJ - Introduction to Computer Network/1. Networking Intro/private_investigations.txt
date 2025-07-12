@@ -1,0 +1,49 @@
+1. 
+
+My IP Address is 192.168.XXX.XXX, it is a private address
+
+Private IPv4 Addresses
+
+Private IP addresses are reserved for use within local networks and are not routable on the global internet. They are typically assigned by routers to devices within a home, office, or organization. These addresses are defined by the RFC 1918 standard and fall within the following ranges:
+
+10.0.0.0 to 10.255.255.255 (10.0.0.0/8)
+
+172.16.0.0 to 172.31.255.255 (172.16.0.0/12)
+
+192.168.0.0 to 192.168.255.255 (192.168.0.0/16)
+
+2.
+My public IP, 129.126.XXX.XXX is different from my private IP
+
+3.
+Singapore
+
+4.
+┌──(.venv)─(kali㉿kali)-[~/Downloads]
+
+└─$ nslookup www.google.com 
+
+Server:         192.168.136.2
+
+Address:        192.168.136.2#53
+
+
+
+Non-authoritative answer:
+
+www.google.com  canonical name = forcesafesearch.google.com.
+
+Name:   forcesafesearch.google.com
+
+Address: 216.239.38.120
+
+Name:   forcesafesearch.google.com
+
+Address: 2001:4860:4802:32::78
+
+
+
+192.168.136.2
+ Bogon IP Address
+What is a Bogon IP Address
+Some IP addresses and IP ranges are reserved for special use, such as for local or private networks, and should not appear on the public internet. These reserved ranges, along with other IP ranges that haven’t yet been allocated and therefore also shouldn’t appear on the public internet are sometimes known as bogons.

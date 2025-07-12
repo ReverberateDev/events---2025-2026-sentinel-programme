@@ -1,0 +1,15 @@
+Task 1: Decode a URL
+Protocol for data transfer (HTTP/HTTPS)
+Domain name of the server
+Location of the resource on the server
+
+
+Task 2: Dissect an HTTP Request
+Requests data from a server
+Path / Specifies the resource being requested
+Version	Defines the HTTP protocol version for compatibility
+Identifies the target server
+
+Task 3: Construct an HTTP Request
+GET /hypertext/WWW/TheProject.html HTTP/1.1  
+Host: info.cern.ch  
