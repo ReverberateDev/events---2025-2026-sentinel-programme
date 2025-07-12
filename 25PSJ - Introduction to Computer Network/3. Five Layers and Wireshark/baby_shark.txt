@@ -1,5 +1,10 @@
-Initially there were 41 packets, after filter, there are 4
-2 packets outgoing
-ip.src == [Your_IP] && http
+Step 2 - Basic filtering
+5. There are 19 packets overall
+6. Filter is "http"
+7. 2 packets are displayed now
+8. Filter is "ip.src == XXX.168.136.XXX"
+9. Filter is "http && ip.src == XXX.168.136.XXX"
 
-4 messages
+Step 3 - Looking for data
+10. 1 from server, 1 from client
+11. AkamaiNetStorage

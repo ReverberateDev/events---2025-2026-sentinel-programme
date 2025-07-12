@@ -1,0 +1,85 @@
+Packet 1: ARP Request
+- Ethernet Layer:
+  - Source MAC: aa:bb:cc:dd:ee:ff
+  - Destination MAC: Broadcast (FF:FF:FF:FF:FF:FF)
+- ARP Layer:
+  - Type: Request
+  - Sender MAC: aa:bb:cc:dd:ee:ff
+  - Sender IP: 192.168.1.1
+  - Target MAC: 00:00:00:00:00:00
+  - Target IP: 192.168.1.100
+- Description: The router (192.168.1.1) is broadcasting to discover the MAC address for IP 192.168.1.100.
+
+
+Packet 2: ARP Reply
+- Ethernet Layer:
+  - Source MAC: 52:1a:7f:9b:3e:cd
+  - Destination MAC: aa:bb:cc:dd:ee:ff
+- ARP Layer:
+  - Type: Reply
+  - Sender MAC: 52:1a:7f:9b:3e:cd
+  - Sender IP: 192.168.1.100
+  - Target MAC: aa:bb:cc:dd:ee:ff
+  - Target IP: 192.168.1.1
+- Description: Device 192.168.1.100 responds to the router with its MAC address.
+
+
+Packet 3: ARP Request
+- Ethernet Layer:
+  - Source MAC: aa:bb:cc:dd:ee:ff
+  - Destination MAC: Broadcast (FF:FF:FF:FF:FF:FF)
+- ARP Layer:
+  - Type: Request
+  - Sender MAC: aa:bb:cc:dd:ee:ff
+  - Sender IP: 192.168.1.1
+  - Target MAC: 00:00:00:00:00:00
+  - Target IP: 192.168.1.150
+- Description: The router broadcasts to find the MAC address for IP 192.168.1.150.
+
+
+Packet 4: ARP Reply
+- Ethernet Layer:
+  - Source MAC: a6:4f:2d:8e:7c:51
+  - Destination MAC: aa:bb:cc:dd:ee:ff
+- ARP Layer:
+  - Type: Reply
+  - Sender MAC: a6:4f:2d:8e:7c:51
+  - Sender IP: 192.168.1.150
+  - Target MAC: aa:bb:cc:dd:ee:ff
+  - Target IP: 192.168.1.1
+- Description: Device 192.168.1.150 responds to the router with its MAC address.
+
+
+Packet 5: ARP Request (No Reply)
+- Ethernet Layer:
+  - Source MAC: aa:bb:cc:dd:ee:ff
+  - Destination MAC: Broadcast (FF:FF:FF:FF:FF:FF)
+- ARP Layer:
+  - Type: Request
+  - Sender MAC: aa:bb:cc:dd:ee:ff
+  - Sender IP: 192.168.1.1
+  - Target MAC: 00:00:00:00:00:00
+  - Target IP: 10.0.0.200
+- Description: The router broadcasts to find the MAC address for IP 10.0.0.200, but receives no response.
+- Possible Reasons for No Reply:
+  1. The device with IP 10.0.0.200 is not on the same network segment
+  2. The device may be powered off or disconnected
+  3. A firewall may be blocking ARP responses
+  4. The IP address may not be assigned to any device
+  5. The request may have been lost due to network issues
+
+
+Answers to Questions
+
+Purpose of ARP Request: 
+To discover the MAC address associated with a specific IP address on the local network segment.
+
+Purpose of ARP Reply:  
+To provide the requested MAC address to the device that initiated the ARP request.
+
+Difference in Destination MAC:  
+ARP Requests use broadcast (FF:FF:FF:FF:FF:FF) to reach all devices on the network.  
+ARP Replies use unicast (the requester's MAC address) since the responder knows exactly who needs the information.
+
+No Reply for Packet 5:  
+The most likely reasons are that 10.0.0.200 is on a different network, the device is offline, or the IP isn't assigned.
