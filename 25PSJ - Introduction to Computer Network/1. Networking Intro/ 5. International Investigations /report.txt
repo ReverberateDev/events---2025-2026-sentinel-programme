@@ -1,0 +1,5 @@
+Cybersecurity Investigation Report
+==============================
+The following IP addresses were flagged as suspicious:
+
+- Suspicious IP detected: 37.59.8.29 (Country: FR)

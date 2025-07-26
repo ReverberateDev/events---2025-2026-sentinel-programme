@@ -1,0 +1,112 @@
+### 1 ###
+
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 localhost
+PING localhost (::1) 56 data bytes
+64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.088 ms
+64 bytes from localhost (::1): icmp_seq=2 ttl=64 time=0.017 ms
+64 bytes from localhost (::1): icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from localhost (::1): icmp_seq=4 ttl=64 time=0.045 ms
+
+--- localhost ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3066ms
+rtt min/avg/max/mdev = 0.017/0.048/0.088/0.025 ms
+
+### 2 ###
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 oscars.org
+PING oscars.org (23.51.129.54) 56(84) bytes of data.
+64 bytes from a23-51-129-54.deploy.static.akamaitechnologies.com (23.51.129.54): icmp_seq=1 ttl=128 time=122 ms
+64 bytes from a23-51-129-54.deploy.static.akamaitechnologies.com (23.51.129.54): icmp_seq=2 ttl=128 time=131 ms
+64 bytes from a23-51-129-54.deploy.static.akamaitechnologies.com (23.51.129.54): icmp_seq=3 ttl=128 time=101 ms
+64 bytes from a23-51-129-54.deploy.static.akamaitechnologies.com (23.51.129.54): icmp_seq=4 ttl=128 time=114 ms
+
+--- oscars.org ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 101.323/117.281/131.244/10.983 ms
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 lazada.sg
+PING lazada.sg (47.246.167.114) 56(84) bytes of data.
+64 bytes from 47.246.167.114: icmp_seq=1 ttl=128 time=53.8 ms
+64 bytes from 47.246.167.114: icmp_seq=2 ttl=128 time=29.4 ms
+ping64 bytes from 47.246.167.114: icmp_seq=3 ttl=128 time=56.6 ms
+64 bytes from 47.246.167.114: icmp_seq=4 ttl=128 time=57.9 ms
+
+--- lazada.sg ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 29.433/49.422/57.853/11.632 ms
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 disney.com
+PING disney.com (130.211.198.204) 56(84) bytes of data.
+64 bytes from 204.198.211.130.bc.googleusercontent.com (130.211.198.204): icmp_seq=1 ttl=128 time=250 ms
+64 bytes from 204.198.211.130.bc.googleusercontent.com (130.211.198.204): icmp_seq=2 ttl=128 time=250 ms
+64 bytes from 204.198.211.130.bc.googleusercontent.com (130.211.198.204): icmp_seq=3 ttl=128 time=253 ms
+64 bytes from 204.198.211.130.bc.googleusercontent.com (130.211.198.204): icmp_seq=4 ttl=128 time=237 ms
+
+--- disney.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 237.462/247.725/253.485/6.096 ms
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 dbs.com.sg
+PING dbs.com.sg (103.7.8.138) 56(84) bytes of data.
+64 bytes from 103.7.8.138: icmp_seq=1 ttl=128 time=25.7 ms
+64 bytes from 103.7.8.138: icmp_seq=2 ttl=128 time=44.0 ms
+64 bytes from 103.7.8.138: icmp_seq=3 ttl=128 time=45.0 ms
+64 bytes from 103.7.8.138: icmp_seq=4 ttl=128 time=73.4 ms
+
+--- dbs.com.sg ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 25.721/47.029/73.417/17.056 ms
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 qoo10.sg  
+PING qoo10.sg (52.220.217.108) 56(84) bytes of data.
+
+--- qoo10.sg ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3052ms
+
+                                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~/raphael_lim/extra_curricular/event/events---2025-2026-sentinel-programme]
+└─$ ping -c 4 beyonce.com
+PING beyonce.com (13.35.37.18) 56(84) bytes of data.
+64 bytes from server-13-35-37-18.sin2.r.cloudfront.net (13.35.37.18): icmp_seq=1 ttl=128 time=28.7 ms
+64 bytes from server-13-35-37-18.sin2.r.cloudfront.net (13.35.37.18): icmp_seq=2 ttl=128 time=50.8 ms
+64 bytes from server-13-35-37-18.sin2.r.cloudfront.net (13.35.37.18): icmp_seq=3 ttl=128 time=47.1 ms
+64 bytes from server-13-35-37-18.sin2.r.cloudfront.net (13.35.37.18): icmp_seq=4 ttl=128 time=44.0 ms
+
+--- beyonce.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 28.725/42.666/50.810/8.399 ms
+
+Website Speed Ranking (Fastest to Slowest):
+beyonce.com - 42.7 ms average
+
+Range: 28.7 - 50.8 ms
+Hosted on CloudFront (Amazon's CDN)
+dbs.com.sg - 47.0 ms average
+
+Range: 25.7 - 73.4 ms
+Singapore bank, likely local servers
+lazada.sg - 49.4 ms average
+
+Range: 29.4 - 57.9 ms
+Singapore e-commerce site
+oscars.org - 117.3 ms average
+
+Range: 101.3 - 131.2 ms
+Hosted on Akamai Technologies
+disney.com - 247.7 ms average
+
+Range: 237.5 - 253.5 ms
+Hosted on Google Cloud
+qoo10.sg - NO RESPONSE (100% packet loss)
+
+Website didn't respond to ping requests
+Could be blocking ICMP or experiencing issues
+
+Key Observations:
+Fastest: Local/regional sites (Singapore-based) with CDN support
