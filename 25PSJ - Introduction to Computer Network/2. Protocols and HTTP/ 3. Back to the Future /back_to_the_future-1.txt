@@ -1,0 +1,38 @@
+Netcat command I used:
+nc -v example.com 80
+
+First request (worked):
+GET / HTTP/1.0
+Host: example.com
+
+First response:
+
+Code: 200 OK
+
+Type: text/html
+
+Cached for 715 seconds
+
+Second request (failed):
+GET /notexisting HTTP/1.0
+Host: example.com
+
+Second response:
+
+Code: 404 Not Found
+
+Type: text/html
+
+Not cached at all
+
+Why different:
+
+200 means page exists
+
+404 means page doesn't exist
+
+Working page gets cached
+
+Broken page doesn't get cached
+
+Both show same example page because it's example.com

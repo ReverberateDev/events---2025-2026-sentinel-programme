@@ -1,0 +1,25 @@
+1. Desktop User-Agent: 
+Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+
+2. Device Type Identified: 
+Linux x86_64 (Desktop computer running Linux)
+
+3. Mobile User-Agent: 
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+
+4. Main Differences:
+- Desktop Version:
+* OS: Linux (X11)
+* Architecture: x86_64 (64-bit computer processor)
+* Browser: Firefox 128.0
+* No mobile identifiers
+    
+- Mobile Version:
+* Device: iPhone
+* OS: iOS 14.6 (marked as "CPU iPhone OS 14_6")
+* Browser: Mobile Safari 14.0.3
+* Includes "Mobile" tag and WebKit version
+* Simulates Mac OS X compatibility
+
+5. Explanation:
+The desktop version identifies a Firefox browser running on a Linux computer, which tells websites to send the full desktop version of their pages. The mobile version clearly identifies an iPhone running iOS 14.6 with Safari browser, which makes websites send mobile-optimized content with touch-friendly interfaces. The "Mobile" tag and different WebKit version help servers further optimize the experience for smaller screens and touch input.

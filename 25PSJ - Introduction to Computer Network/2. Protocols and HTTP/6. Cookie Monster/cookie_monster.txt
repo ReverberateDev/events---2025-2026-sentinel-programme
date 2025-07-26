@@ -1,0 +1,45 @@
+1. Set-Cookie Header Analysis:
+   - Header: skin=noskin; path=/; domain=.amazon.com
+   - Explanation:
+     * "skin=noskin": Sets default UI skin/theme preference.
+     * "path=/": Makes cookie accessible across all paths on the domain.
+     * "domain=.amazon.com": Applies to all subdomains of amazon.com.
+
+2. Initial Cookie Header (Before Changes):
+   - Content:
+     skin=noskin; 
+     csm-hit=tb:s-Y8GWZ9DFBWW0TDN0Q47Z|...; 
+     session-id=133-0648940-7420814; 
+     session-id-time=2082787201l; 
+     i18n-prefs=USD; 
+     lc-main=en_US; 
+     sp-cdn="L5Z9:SG"; 
+     ubid-main=133-0957184-5866359
+   - Key Observations:
+     * Language: en_US (English)
+     * Currency: USD (US Dollars)
+     * Session cookies (session-id, ubid-main) track user activity.
+
+3. Modified Cookie Header (After Language/Currency Change):
+   - Content:
+     i18n-prefs=EUR; 
+     lc-main=es_US; 
+     ... [other unchanged cookies]
+   - Key Changes:
+     * Language changed to es_US (Spanish)
+     * Currency changed to EUR (Euros)
+   - Responsible Cookies:
+     * lc-main: Controls language display (es_US = Spanish/US format)
+     * i18n-prefs: Controls currency (EUR = Euros)
+
+4. Manual Cookie Modification Attempt:
+   - Changed lc-main from es_US to en_US in Developer Tools.
+   - Observed Behavior: Cookie reverted to es_US after refresh.
+   - Reason: Amazon's server validates and overrides based on account settings.
+
+5. Comparison of Set-Cookie vs. Cookie Headers:
+   - Set-Cookie (Server → Browser):
+     * Only sets initial cookie (skin=noskin).
+   - Cookie (Browser → Server):
+     * Includes all stored cookies (skin, session-id, lc-main, etc.).
+     * Demonstrates cookie persistence across requests.
