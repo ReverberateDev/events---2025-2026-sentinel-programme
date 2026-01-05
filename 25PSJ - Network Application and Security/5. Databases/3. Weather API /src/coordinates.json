@@ -1,0 +1,18 @@
+{
+    "new york": {
+        "latitude": "40.7128", 
+        "longitude": "-74.0060"
+    },
+    "tokyo": {
+        "latitude": "35.6764", 
+        "longitude": "139.6500"
+    },
+    "paris": {
+        "latitude": "48.8575", 
+        "longitude": "2.3514"
+    },
+    "london": {
+        "latitude": "51.5072", 
+        "longitude": "-0.1276"
+    }
+}
